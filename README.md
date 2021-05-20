@@ -18,9 +18,10 @@ To run the **clustering** operation open the terminal and type the following.
 ```
 mvn exec:java -Dexec.mainClass="org.tool.clustering"
 ```
+# Evaluated Date
 
 Inside the *EvaluatedData* folder, there are the results reported in the technichal paper.
-There are 6 files for each configuration tested with boosting and not.
+There are 6 files for each configuration tested with boosting and without it.
 The files are csv with the following structure:
 ```
 tested category,retrieved category
