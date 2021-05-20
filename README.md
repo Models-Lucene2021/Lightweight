@@ -2,7 +2,7 @@
 
 # How to run
 
-#Prerequisites
+# Prerequisites
   * Java 11
   * Maven
 
