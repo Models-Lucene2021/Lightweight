@@ -17,7 +17,6 @@ import java.util.ArrayList;
 public class classification {
 
     public static void main(String[] args) throws IOException {
-        //mvn exec:java -Dexec.mainClass="org.tool.classification"
         /*
         config
          */
