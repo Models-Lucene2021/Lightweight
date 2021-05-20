@@ -2,11 +2,11 @@
 
 # How to run
 
-'''
+,,,
 mvn exec:java -Dexec.mainClass="org.tool.classification"
-'''
+,,,
 
-'''
+,,,
 mvn exec:java -Dexec.mainClass="org.tool.clustering"
-'''
+,,,
 
