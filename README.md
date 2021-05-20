@@ -1,10 +1,10 @@
 # This is the folder ofthe replication package of Metamodel Clustering Classification approach for Models conference 2021
 
-# How to run
-
 # Prerequisites
   * Java 11
   * Maven
+
+# How to run
 
 To start the evaluation you should modify the file *config*, inside the file, is described each folder you need to change.
 By default, everything is configured to run with the dataset and folders stored ind the *Data* folder.
