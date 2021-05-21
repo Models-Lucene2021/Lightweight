@@ -31,7 +31,7 @@ public class evaluateClustering {
 
         int testSamples = 1;
         int counterSamples = 0;
-        int rounds = 5; //138;276;551 to be changed
+        int rounds = config.getDatasetElements();
         int hitsPerPage = 0;
 
         PrintWriter writer = new PrintWriter(new File(config.getOutputFile()));
