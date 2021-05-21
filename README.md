@@ -1,4 +1,4 @@
-# This is the folder ofthe replication package of Metamodel Clustering Classification approach for Models conference 2021
+# This is the folder of the replication package of Metamodel Clustering Classification approach for Models conference 2021
 
 # Prerequisites
   * Java 11
