@@ -27,6 +27,9 @@ public class configuration {
     }
 
     public String getIndexDirectory() {
+        if(!new File(indexDirectory).exists()){
+            new File(indexDirectory).mkdirs();
+        }
         return indexDirectory;
     }
 
