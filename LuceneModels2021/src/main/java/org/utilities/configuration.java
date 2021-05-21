@@ -8,11 +8,11 @@ import java.util.Arrays;
 
 public class configuration {
 
-    private String indexDirectory ="/Data/Indexes"; //the folder where the indexes will be stored
-    private String basePath = "/Data/Dataset/FullDataset"; //the folder where are the training metamodels
-    private String testDirectory = "/Data/Testing"; //the folder where is temporary stored the testing metamodels
-    private String evaluationDirectory = "/Data/Evaluation"; //the folder where are stored each round of the evaluation
-    private String testFile = this.basePath+"090_003_025_maven-164469695.ecore"; //the input ecore used as a test, such file should not be present in the dataset (basepath)
+    private String indexDirectory ="Data/Indexes"; //the folder where the indexes will be stored
+    private String basePath = "Data/Dataset/FullDataset"; //the folder where are the training metamodels
+    private String testDirectory = "Data/Testing"; //the folder where is temporary stored the testing metamodels
+    private String evaluationDirectory = "Data/Evaluation"; //the folder where are stored each round of the evaluation
+    private String testFile = this.basePath+"/"+"090_003_025_maven-164469695.ecore"; //the input ecore used as a test, such file should not be present in the dataset (basepath)
     private String outputFile = "results.csv"; // the result file
     private ArrayList<Integer> elemsPerCluster = new ArrayList<>();
     private int datasetElements = 0;
@@ -43,6 +43,9 @@ public class configuration {
     }
 
     public String getTestDirectory() {
+        if(!new File(testDirectory).exists()){
+            new File(testDirectory).mkdirs();
+        }
         return testDirectory;
     }
 
@@ -51,6 +54,9 @@ public class configuration {
     }
 
     public String getEvaluationDirectory() {
+        if(!new File(evaluationDirectory).exists()){
+            new File(evaluationDirectory).mkdirs();
+        }
         return evaluationDirectory;
     }
 
