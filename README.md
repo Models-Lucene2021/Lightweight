@@ -18,6 +18,19 @@ To run the **clustering** operation open the terminal and type the following.
 ```
 mvn exec:java -Dexec.mainClass="org.tool.clustering"
 ```
+
+If you want to run the complete leave-one-out evaluation of the **classification** with the metamodels stored inside the dataset type
+```
+mvn exec:java -Dexec.mainClass="org.tool.evaluateClassification"
+```
+
+For the evaluation of the **clustering** type
+```
+mvn exec:java -Dexec.mainClass="org.tool.evaluateClustering"
+```
+The results will be saved in a csv file.
+Be carefull to the configuration file, by default the number of rounds is as the full dataset (551 elements), this means that the complete evaluation will take some hours to complete. 
+
 # Evaluated Data
 
 Inside the *EvaluatedData* folder, there are the results reported in the technichal paper.
