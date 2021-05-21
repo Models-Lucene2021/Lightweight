@@ -58,7 +58,7 @@ public class evaluateClustering {
                     }
                 }
             }
-            hitsPerPage = config.getElemsPerCluster().get(Integer.parseInt(testCluster)-1);
+            hitsPerPage = config.getElemsPerCluster().get(Integer.parseInt(testCluster)-1)-1;
             ArrayList<Integer> res = eval(INDEX_DIRECTORY, BASEPATH, luceneIndexDir, testFolder, analyzer, hitsPerPage, writer, classification);
             StringBuilder sb = new StringBuilder();
             sb.append(testCluster+","+" "+","+(int)(( (double)res.get(0) /(testSamples*hitsPerPage))*100));
