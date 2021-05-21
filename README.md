@@ -29,7 +29,7 @@ For the evaluation of the **clustering** type
 mvn exec:java -Dexec.mainClass="org.tool.evaluateClustering"
 ```
 The results will be saved in a csv file.
-Be carefull to the configuration file, by default the number of rounds is as the full dataset (551 elements), this means that the complete evaluation will take some hours to complete. 
+Be careful to the configuration file, by default the number of rounds is as the full dataset (551 elements), this means that the complete evaluation will take some hours to complete. 
 
 # Evaluated Data
 
